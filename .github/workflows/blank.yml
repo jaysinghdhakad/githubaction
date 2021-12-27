@@ -28,7 +28,10 @@ jobs:
       # Runs a single command using the runners shell
       - uses: papeloto/action-zip@v1
         with:
-          files: dist/ manifest.json
+          files: dist/
           dest: result.zip
+      - uses: actions/upload-artifact@v2
+        with:
+          name: result.zip
 
     
