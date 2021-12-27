@@ -30,8 +30,7 @@ jobs:
         with:
           files: dist/
           dest: result.zip
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v1
         with:
-          name: result.zip
-
-    
+           name: my-artifact
+           path: ${{ github.workspace }}/result.zip
