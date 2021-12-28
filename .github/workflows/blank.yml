@@ -28,7 +28,7 @@ jobs:
       # Runs a single command using the runners shell
       - uses: papeloto/action-zip@v1
         with:
-          files: dist/
+          files: githubaction/dist/ 
           dest: result.zip
       - uses: actions/upload-artifact@v1
         with:
